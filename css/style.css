@@ -24,7 +24,6 @@ body{
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
-    margin-left: 0%;
 
 }
 .btn-login{
@@ -45,24 +44,7 @@ body{
     display: flex;
     width: 100%;
 }
-@media  screen and (max-width:768px) {
-    .navbar{
-        display: flex;
-        flex-wrap: wrap;
-        background-color: aqua;
-        height: min-content;
-    }
-    .card-about{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: max-content;
-    }
-    .login-com{
-        float: right;
-        margin-right: 20px;
-    }
-}
+
 .card{
     border: 2px solid black;
     padding: 5px;
@@ -80,9 +62,8 @@ body{
 }
 .row{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    padding: 10px;
+    padding:0px 10px 0px 10px;
 }
 .col-2{
     width: 50%;
@@ -109,14 +90,8 @@ body{
     margin: 10px;
     justify-content:center;
 }
-.contact{
-    justify-content: center;
-    padding: 10px 0px 10px 0px;
-    font-family:serif;
-    margin: 0px 10px 0px 10px;
-}
 input,select{
-    width:250px;
+    width:100%;
     height: 30px;
 }
 .Description{
@@ -158,10 +133,70 @@ h2{
     padding: 20px;
     border: 1px solid brown;
 }
+.form-1{
+    background-color: azure;
+    text-indent: 0%;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    border: 1px solid brown;
+}
 .center{
-    margin: 0% 33% 0% 33% ;  
+    margin: 0% 30% 0% 30% ;  
 }
 .margin{
     float: right;
     margin: 12px 0px 12px 12px;
+}
+@media  screen and (max-width:768px) {
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aqua;
+        height: min-content;
+    }
+    .card-about{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .login-com{
+        float: right;
+        margin: 15px;
+        
+    }
+    .border{
+        width:50%;
+        margin: 1% 20%;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+     input,select{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%; 
+    } 
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .Des-size{
+        width: 50%;    
+    }
+    .margin{
+        float:left;
+        margin: 10px 30px 0px 0px;
+    }
+    .form{
+        width: min-content;
+    }
+    .form-1{
+        width: 100%;
+    }
 }
